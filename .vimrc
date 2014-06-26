@@ -12,12 +12,15 @@ Plugin	'gmarik/vundle'
 
 " Now its time for other plugins.
 Plugin	'scrooloose/nerdtree.git'
-Plugin	'docunext/closetag.vim.git'
+Plugin	'docunext/closetag.vim.git', {'name': 'closetag'}
 Plugin 	'vim-scripts/supertab.git'
-Plugin 	'vim-scripts/c.vim'
+Plugin 	'vim-scripts/c.vim', {'name': 'cvim'}
 Plugin	'scrooloose/syntastic'
-Plugin 	'jelera/vim-javascript-syntax'
+Plugin 	'jelera/vim-javascript-syntax', {'name': 'jsSyntax'}
 Plugin 	'pangloss/vim-javascript'
+Plugin 	'majutsushi/tagbar'
+Plugin 	'tpope/vim-surround', {'name': 'surround'}
+Plugin 	'scrooloose/nerdcommenter'
 " This plugin requires an updated version of vim
 " Plugin 	'Valloric/YouCompleteMe'
 
@@ -76,9 +79,12 @@ nnoremap	<F10>	:NERDTreeToggle<CR>
 " Auto commands
 autocmd InsertEnter,InsertLeave		*		set cul!
 
+" FileType commands
+autocmd FileType html 		setlocal nowrap
+
 " Plugins section.
 syntax enable
 runtime ftplugin/man.vim
 runtime macros/matchit.vim
 
-let mapleader=";"
+let mapleader=" "

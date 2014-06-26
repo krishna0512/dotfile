@@ -16,7 +16,7 @@ fi
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # This defination of ll sorts the output according to the last modified file at the end.
-alias ll='ls -Alr --sort=time'
+alias ll='ls -Alrh --sort=time'
 alias la='ls -A'
 alias l='ls'
 alias sl='ls'
@@ -38,6 +38,7 @@ alias more='less'
 alias pop='popd'
 alias push='pushd .'
 alias curl='curl -L'
+alias g++='g++ -Wall -g -std=c++0x'
 # aliases for apt family
 alias apt-install='sudo apt-get install'
 alias apt-search='sudo apt-cache search'

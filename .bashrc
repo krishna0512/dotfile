@@ -64,6 +64,7 @@ fi
 
 export SSH_AUTH_SOCK=0
 export PATH=$PATH:.
+NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
 export PYTHONSTARTUP='/home/krishna/.pythonrc'
 export PS1="[\$?] $PS1"
 # This will display the date and time at the upper right corner of the tty screen.

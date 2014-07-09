@@ -22,15 +22,15 @@ Plugin 	'majutsushi/tagbar'
 Plugin 	'tpope/vim-surround', {'name': 'surround'}
 Plugin 	'scrooloose/nerdcommenter'
 " This plugin requires an updated version of vim
-" Plugin 	'Valloric/YouCompleteMe'
+Plugin 	'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 " Vundle setup finished.
 
-set smartindent
 set cindent
 set ruler
 set nu
+set autoindent
 set nohlsearch
 set showcmd
 set incsearch
@@ -39,6 +39,7 @@ set cul
 set tabstop=4
 set shiftwidth=4
 set mouse=a
+set foldmethod=manual
 
 " Automatically cd into the directory that file is in
 set autochdir
@@ -46,6 +47,7 @@ set autochdir
 " tab completion stuff
 set wildmenu
 set wildmode=list:longest,full
+set smartindent
 
 " use English for spell checking but don't spell check by default
 if version >= 700

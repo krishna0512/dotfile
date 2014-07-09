@@ -37,11 +37,15 @@ alias kill='kill -9'
 alias more='less'
 alias pop='popd'
 alias push='pushd .'
+# This calls the custom command @ /usr/bin/krishna-askpass for sudo authentication.
+# This configuration is defined in sudo.conf file
+alias sudo='sudo --askpass'
 alias curl='curl -L'
+# This g++ alias doesnt work inside the makefile
 alias g++='g++ -Wall -g -std=c++0x'
 # aliases for apt family
 alias apt-install='sudo apt-get install'
-alias apt-search='sudo apt-cache search'
-alias apt-update='sudo apt-get update'
-alias apt-upgrade='sudo apt-get upgrade'
+alias apt-search='apt-cache search'
+alias apt-update='sudo apt-get update; alert'
+alias apt-upgrade='sudo apt-get upgrade; alert'
 alias apt-remove='sudo apt-get remove --purge'

@@ -22,10 +22,10 @@ alias l='ls'
 alias sl='ls'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias sleep='dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend'
-alias suspend='sleep'
-alias hibernate='pm-hibernate'
-alias hiber='pm-hibernate'
+# alias sleep='dbus-send --system --print-reply --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend'
+# alias suspend='sleep'
+# alias hibernate='pm-hibernate'
+# alias hiber='pm-hibernate'
 alias vi='vim'
 alias vim='vim -p'
 alias v='view'
@@ -35,6 +35,7 @@ alias vimrc='vim ~/.vimrc'
 alias bashalias='vim ~/.bash_aliases'
 alias kill='kill -9'
 alias more='less'
+alias t='todo'
 alias pop='popd'
 alias push='pushd .'
 # This calls the custom command @ /usr/bin/krishna-askpass for sudo authentication.
@@ -45,7 +46,14 @@ alias curl='curl -L'
 alias g++='g++ -Wall -g -std=c++0x'
 # aliases for apt family
 alias apt-install='sudo apt-get install'
+	make-completion-wrapper _apt_get _apt_install apt-get install
+	complete -F _apt_install apt-install
 alias apt-search='apt-cache search'
 alias apt-update='sudo apt-get update; alert'
 alias apt-upgrade='sudo apt-get upgrade; alert'
 alias apt-remove='sudo apt-get remove --purge'
+	make-completion-wrapper _apt_get _apt_remove apt-get remove --purge
+	complete -F _apt_remove apt-remove
+alias apt-add='sudo add-apt-repository -s -y'
+
+alias gs='git status'

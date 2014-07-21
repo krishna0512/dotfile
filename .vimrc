@@ -20,6 +20,7 @@ Plugin 	'jelera/vim-javascript-syntax', {'name': 'jsSyntax'}
 Plugin 	'pangloss/vim-javascript'
 Plugin 	'majutsushi/tagbar'
 Plugin 	'tpope/vim-surround', {'name': 'surround'}
+Plugin 	'wincent/Command-T', {'name': 'command-t'}
 Plugin 	'scrooloose/nerdcommenter'
 " This plugin requires an updated version of vim
 Plugin 	'Valloric/YouCompleteMe'
@@ -40,6 +41,8 @@ set tabstop=4
 set shiftwidth=4
 set mouse=a
 set foldmethod=manual
+" Setting the tags file
+set tag=./tags,tags,/usr/include/tags
 
 " Automatically cd into the directory that file is in
 set autochdir
@@ -48,6 +51,8 @@ set autochdir
 set wildmenu
 set wildmode=list:longest,full
 set smartindent
+
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 " use English for spell checking but don't spell check by default
 if version >= 700
@@ -60,12 +65,12 @@ cnoreabbrev	<expr>	h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab help' : '
 cnoreabbrev <expr>  W getcmdtype() == ":" && getcmdline() == 'W' ? 'w' : 'W'
 cnoreabbrev <expr>  Q getcmdtype() == ":" && getcmdline() == 'Q' ? 'q' : 'Q'
 cnoreabbrev <expr>  qq getcmdtype() == ":" && getcmdline() == "qq" ? "q!" : "qq"
-cnoreabbrev <expr>  Wq getcmdtype() == ":" && getcmdline() == "qq" ? "wq" : "qq"
+cnoreabbrev <expr>  Wq getcmdtype() == ":" && getcmdline() == "Wq" ? "wq" : "qq"
+cnoreabbrev <expr>  man getcmdtype() == ":" && getcmdline() == "man" ? "Man" : "man"
 inoreabbrev @@		kt.krishna.tulsyan@gmail.com
 
 " Mappings section.
 cnoremap	w!!		w !sudo tee > /dev/null %
-cnoremap	man 	Man
 inoremap	jk		<esc>
 inoremap	kj		<esc>
 nnoremap	<C-h>	:set hls!<CR>
@@ -74,6 +79,7 @@ nnoremap	J		<C-w>j
 nnoremap	K		<C-w>k
 nnoremap	L		<C-w>l
 nnoremap	Q		:q<CR>
+vnoremap 	<space> zf
 
 " Toggles the NERDTree
 nnoremap	<F10>	:NERDTreeToggle<CR>
@@ -89,4 +95,4 @@ syntax enable
 runtime ftplugin/man.vim
 runtime macros/matchit.vim
 
-let mapleader=" "
+let mapleader=","

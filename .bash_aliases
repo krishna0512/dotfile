@@ -19,6 +19,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias ll='ls -Alrh --sort=time'
 alias la='ls -A'
 alias l='ls'
+alias lsc='ls'
+alias lcs='ls'
+alias slc='ls'
 alias sl='ls'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -43,7 +46,7 @@ alias push='pushd .'
 alias sudo='sudo --askpass'
 alias curl='curl -L'
 # This g++ alias doesnt work inside the makefile
-alias g++='g++ -Wall -g -std=c++0x'
+alias g++='g++ -Wall -Wno-sign-compare -g -std=c++0x'
 # aliases for apt family
 alias apt-install='sudo apt-get install'
 	make-completion-wrapper _apt_get _apt_install apt-get install
@@ -57,3 +60,4 @@ alias apt-remove='sudo apt-get remove --purge'
 alias apt-add='sudo add-apt-repository -s -y'
 
 alias gs='git status'
+alias gd='git difftool'

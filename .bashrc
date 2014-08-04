@@ -152,4 +152,6 @@ export PYTHONSTARTUP='/home/krishna/.pythonrc'
 export PS1="[\$?] $PS1"
 export DEBFULLNAME="Krishna Tulsyan"
 export DEBEMAIL="kt.krishnatulsyan@gmail.com"
-
+export http_proxy="http://proxy.iiit.ac.in:8080"
+export https_proxy="https://proxy.iiit.ac.in:8080"
+export no_proxy="127.0.0.1, localhost, Jaris, jarvis, iiit.ac.in, .iiit.ac.in, iiit.net, 10.0.0.0/16"

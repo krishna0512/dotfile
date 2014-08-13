@@ -35,6 +35,7 @@ alias v='view'
 alias p='python'
 alias bashrc='vim ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
+alias n='nautilus .'
 alias bashalias='vim ~/.bash_aliases'
 alias kill='kill -9'
 alias more='less'
@@ -43,7 +44,7 @@ alias pop='popd'
 alias push='pushd .'
 # This calls the custom command @ /usr/bin/krishna-askpass for sudo authentication.
 # This configuration is defined in sudo.conf file
-alias sudo='sudo --askpass'
+alias sudo='sudo -E --askpass'
 alias curl='curl -L'
 # This g++ alias doesnt work inside the makefile
 alias g++='g++ -Wall -Wno-sign-compare -g -std=c++0x'

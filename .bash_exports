@@ -1,0 +1,17 @@
+#!/bin/bash
+# various variables for exporting
+
+export SSH_AUTH_SOCK=0
+export PATH=$PATH:.
+export NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
+export PYTHONSTARTUP='/home/krishna/.pythonrc'
+export PS1="[\$?] $PS1"
+export DEBFULLNAME="Krishna Tulsyan"
+export DEBEMAIL="kt.krishnatulsyan@gmail.com"
+export http_proxy="http://proxy.iiit.ac.in:8080"
+export https_proxy="https://proxy.iiit.ac.in:8080"
+#export socks_proxy="localhost:9001"
+export no_proxy="127.0.0.1, localhost, Jaris, jarvis, iiit.ac.in, .iiit.ac.in, iiit.net, 10.0.0.0/16"
+export CC="gcc"
+export CXX="g++"
+export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"

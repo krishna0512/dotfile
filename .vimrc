@@ -89,6 +89,9 @@ autocmd InsertEnter,InsertLeave		*		set cul!
 
 " FileType commands
 autocmd FileType html 		setlocal nowrap
+autocmd FileType php 		inoremap 4 $
+autocmd FileType php 		inoremap $ 4
+autocmd FileType c,cpp,html	vnoremap % $%
 
 " Plugins section.
 syntax enable

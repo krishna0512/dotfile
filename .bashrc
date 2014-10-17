@@ -138,20 +138,17 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Export definations.
+# You may want to put all your variable definations in a seperate file
+# like ~/.bash_exports, instead of adding them here directly.
+
+if [ -f ~/.bash_exports ]; then
+	. ~/.bash_exports
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-export SSH_AUTH_SOCK=0
-export PATH=$PATH:.
-NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
-export PYTHONSTARTUP='/home/krishna/.pythonrc'
-export PS1="[\$?] $PS1"
-export DEBFULLNAME="Krishna Tulsyan"
-export DEBEMAIL="kt.krishnatulsyan@gmail.com"
-export http_proxy="http://proxy.iiit.ac.in:8080"
-export https_proxy="https://proxy.iiit.ac.in:8080"
-export no_proxy="127.0.0.1, localhost, Jaris, jarvis, iiit.ac.in, .iiit.ac.in, iiit.net, 10.0.0.0/16"

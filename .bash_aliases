@@ -30,22 +30,25 @@ alias ...='cd ../..'
 # alias hibernate='pm-hibernate'
 # alias hiber='pm-hibernate'
 alias vi='vim'
-alias vim='vim -p'
+alias vim='vim -p +TagbarToggle'
 alias v='view'
 alias p='python'
 alias bashrc='vim ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
 alias n='nautilus .'
 alias bashalias='vim ~/.bash_aliases'
+alias bashexport='vim ~/.bash_exports'
 alias kill='kill -9'
 alias more='less'
 alias t='todo'
+	make-completion-wrapper _todo _t todo
+	complete -F _t t
 alias pop='popd'
 alias push='pushd .'
 # This calls the custom command @ /usr/bin/krishna-askpass for sudo authentication.
 # This configuration is defined in sudo.conf file
 alias sudo='sudo -E --askpass'
-alias curl='curl -L'
+alias curl='curl -L -s'
 # This g++ alias doesnt work inside the makefile
 alias g++='g++ -Wall -Wno-sign-compare -g -std=c++0x'
 # aliases for apt family

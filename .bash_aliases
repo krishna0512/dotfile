@@ -7,6 +7,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias ls='ls --color=always'
 alias ll='ls -Alrh --sort=time'
 alias la='ls -A'
+alias lt='ls | tr "\t" "\n"'
 alias l='ls'
 alias lsc='ls'
 alias lcs='ls'

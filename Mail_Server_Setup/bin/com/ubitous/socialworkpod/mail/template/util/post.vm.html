@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <table border='1px'>
+            <tr><td > $tile.title </td></tr>
+            <tr><td > $tile.teaser</td></tr>
+            <tr><td > $tile.author </td></tr>
+            <tr><td > $tile.createddate </td></tr>        
+                  
+             	 #foreach( $comment in $tile.comments )
+    			<tr><td>$comment.commenttext</td><td>$comment.createddate</td> </tr>
+  				#end          
+        </table>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/activation.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-httpcomponents-httpcore.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mailet-2.4.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mailet-base-1.0.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mime4j-benchmark-0.7.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mime4j-core-0.7.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mime4j-dom-0.7.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mime4j-examples-0.7.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-mime4j-storage-0.7.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/apache-standard-mailets-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/CustomMailet.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/fluent-hc-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/httpclient-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/httpclient-cache-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/httpmime-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/mail.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/mailet-1.0.jar"/>
+	<classpathentry kind="lib" path="/home/saujanya/Downloads/temp/velocity-1.3-dev.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-openjdk-i386"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

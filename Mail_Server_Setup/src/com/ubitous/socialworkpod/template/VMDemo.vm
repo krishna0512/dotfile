@@ -1,0 +1,14 @@
+#set ($companyName = "Name")
+<html>
+  <head>
+    <title>$companyName Homepage</title>
+  </head>
+  <body>
+    <h1>Welcome!!</h1>
+    #if ($userType == "VIP")
+      <h2>You are a VIP!</h2>
+    #else
+      <h2>You are not a VIP!</h2>
+    #end
+  </body>
+</html>
